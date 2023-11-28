@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.conditions-container {
+    background-image: url("../assets/coffee-background.jfif");
+}
