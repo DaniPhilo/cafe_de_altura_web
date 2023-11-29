@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`relative max-w-screen text-sm font-normal ${inter.className}`}>{children}</body>
+      <body className={`relative max-w-screen text-sm font-normal ${inter.className}`}>
+        <main className="w-full lg:max-w-[1280px] pt-10 lg:pt-16 mx-auto text-regular overflow-x-hidden">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }

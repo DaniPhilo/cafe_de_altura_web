@@ -12,6 +12,7 @@ const config: Config = {
         "custom-green": "#2A5B45",
         "custom-black": "#1F1815",
         "custom-white": "#FFF",
+        "off-white": "#F7F5F3",
         "taupe": "#E3DED7",
         "custom-grey": "#515051",
         "custom-dark-grey": "rgba(247, 245, 243, 0.10)"
