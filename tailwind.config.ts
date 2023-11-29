@@ -12,7 +12,9 @@ const config: Config = {
         "custom-green": "#2A5B45",
         "custom-black": "#1F1815",
         "custom-white": "#FFF",
-        "taupe": "#E3DED7"
+        "taupe": "#E3DED7",
+        "custom-grey": "#515051",
+        "custom-dark-grey": "rgba(247, 245, 243, 0.10)"
       },
       fontSize: {
         "title": ["40px", {

@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`text-sm font-normal ${inter.className}`}>{children}</body>
+      <body className={`relative max-w-screen text-sm font-normal ${inter.className}`}>{children}</body>
     </html>
   )
 }
