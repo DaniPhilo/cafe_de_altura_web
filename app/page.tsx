@@ -8,7 +8,7 @@ import Products from "./components/Products";
 
 export default function Home() {
   return (
-    <main className="w-full lg:max-w-[1280px] pt-4 lg:pt-16 text-regular overflow-x-hidden">
+    <main className="w-full lg:max-w-[1280px] pt-4 lg:pt-16 mx-auto text-regular overflow-x-hidden">
       <Navbar />
       <Hero />
       <Conditions />

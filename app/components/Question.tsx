@@ -14,7 +14,7 @@ const Question = ({ title, text }: QuestionProps) => {
     const [openQuestion, setOpenQuestion] = useState<boolean>(false);
 
     return (
-        <div className="w-[300px] md:w-[668px] p-6 space-y-4 bg-custom-white rounded" onClick={() => setOpenQuestion(prev => !prev)}>
+        <div className="w-[300px] md:w-[668px] p-6 space-y-4 bg-custom-white rounded cursor-pointer" onClick={() => setOpenQuestion(prev => !prev)}>
             <div className="flex justify-between items-center">
                 <h3 className="text-small-subtitle">{title}</h3>
                 <Image

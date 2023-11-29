@@ -7,7 +7,7 @@ interface NavLinkProps {
 
 const NavLink = ({ link, text }: NavLinkProps) => {
     return (
-        <li className="p-2">
+        <li className="p-2 rounded hover:bg-custom-grey">
             <Link href={link}>{text}</Link>
         </li>
     )
