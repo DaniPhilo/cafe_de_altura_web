@@ -4,10 +4,13 @@ import { useEffect, useState } from "react"
 import Coffee from "@/interfaces/Coffee";
 import CoffeeCard from "./CoffeeCard";
 import ArrowLink from "./ArrowLink";
+import { useCartContext } from "@/context/CartContext";
 
 const Products = ({ variant }: { variant: "short" | "full" }) => {
 
     const [coffees, setCoffees] = useState<Coffee[]>([]);
+
+    const { cart, setCart } = useCartContext();
 
     const getCoffees = async () => {
         const response = await fetch(process.env.NEXT_PUBLIC_API_URL as string);
@@ -30,11 +33,9 @@ const Products = ({ variant }: { variant: "short" | "full" }) => {
                         return (
                             <CoffeeCard
                                 key={coffee._id}
-                                _id={coffee._id}
-                                brand={coffee.brand}
-                                price={coffee.price}
-                                img_url={coffee.img_url}
-                                available={coffee.available}
+                                coffee={coffee}
+                                cart={cart}
+                                setCart={setCart}
                             />
                         )
                     })

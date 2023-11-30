@@ -10,10 +10,13 @@ import CartIcon from "@/assets/CartIcon.svg"
 import HamburgerBtn from "@/assets/HamburgerBtn.svg"
 import { useState } from "react"
 import NavLink from "./NavLink"
+import { useCartContext } from "@/context/CartContext"
 
 const Navbar = () => {
 
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+    const { cart } = useCartContext();
 
     return (
         <header className="fixed top-0 left-0 z-20 w-full flex justify-start items-center p-3 bg-custom-black text-custom-white lg:justify-center lg:gap-6">
@@ -44,15 +47,18 @@ const Navbar = () => {
             </div>
 
             <div className="absolute top-3 right-3 sm:right-6 z-20 flex justify-center items-center gap-4 sm:gap-6 lg:static">
-                <Link href={"/tienda"} className="">
-                    <Image
-                        src={CartIcon}
-                        alt=""
-                        width={24}
-                        height={24}
-                        className="w-[25px] h-6"
-                    />
-                </Link>
+                <div className="flex items-center gap-2">
+                    <Link href={"/cesta"} className="">
+                        <Image
+                            src={CartIcon}
+                            alt=""
+                            width={24}
+                            height={24}
+                            className="w-[25px] h-6"
+                        />
+                    </Link>
+                    <div>{ cart.reduce((acc, curr) => acc += curr.quantity, 0) || "" }</div>
+                </div>
                 <Image
                     src={HamburgerBtn}
                     alt=""

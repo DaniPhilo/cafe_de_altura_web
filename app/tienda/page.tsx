@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar'
 import Products from '@/components/Products'
 import React from 'react'
 
-const Shop = () => {
+const ShopPage = () => {
     return (
         <>
             <Navbar />
@@ -15,4 +15,4 @@ const Shop = () => {
     )
 }
 
-export default Shop
+export default ShopPage
