@@ -1,7 +1,6 @@
 "use client"
 import CartCoffee from "@/interfaces/CartCoffee"
 import Button from "./Button"
-import { Vazirmatn } from "next/font/google"
 
 interface TotalDetailsProps {
     variant: "cart" | "checkout" | "success",

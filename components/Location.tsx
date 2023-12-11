@@ -1,4 +1,3 @@
-
 import CoffeeShopImage from "@/assets/coffeeshop-image.png"
 import ArrowLink from "./ArrowLink"
 import Image from "next/image"

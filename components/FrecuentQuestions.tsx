@@ -1,4 +1,3 @@
-
 import Questions from "@/helpers/Questions.json"
 import Question from "./Question"
 import ArrowLink from "./ArrowLink"

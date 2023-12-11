@@ -1,7 +1,5 @@
 "use client"
 
-import Button from "./Button"
-
 const ContactForm = () => {
     return (
         <div className="w-full py-10 px-4 bg-custom-white lg:p-10">

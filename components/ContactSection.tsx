@@ -1,4 +1,3 @@
-import Button from "./Button"
 import PhoneGrey from "@/assets/PhoneGrey.svg"
 import MailGrey from "@/assets/MailGrey.svg"
 import Link from "next/link"
