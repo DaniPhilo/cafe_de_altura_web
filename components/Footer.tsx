@@ -2,6 +2,7 @@ import Button from "./Button"
 import Phone from "@/assets/Phone.svg"
 import Mail from "@/assets/Mail.svg"
 import NavLink from "./NavLink"
+import Link from "next/link"
 
 const Footer = ({ variant }: { variant: "short" | "regular" }) => {
     return (
@@ -22,18 +23,18 @@ const Footer = ({ variant }: { variant: "short" | "regular" }) => {
                     </div>
                     <div>
                         <ul>
-                            <NavLink link="/tienda" text="Tienda" />
-                            <NavLink link="" text="Suscripción" />
-                            <NavLink link="" text="Para empresas" />
-                            <NavLink link="" text="Sobre nosotros" />
-                            <NavLink link="" text="Contacto" />
+                            <Link href="/tienda">Tienda</Link>
+                            <Link href="">Suscripción</Link>
+                            <Link href="">Para empresas</Link>
+                            <Link href="">Sobre nosotros</Link>
+                            <Link href="">Contacto</Link>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <NavLink link="" text="Política de privacidad" />
-                            <NavLink link="" text="Política de cookies" />
-                            <NavLink link="" text="Términos y condiciones" />
+                            <Link href="">Política de privacidad</Link>
+                            <Link href="">Política de cookies</Link>
+                            <Link href="">Términos y condiciones</Link>
                         </ul>
                     </div>
                 </div>
