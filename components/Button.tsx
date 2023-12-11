@@ -13,7 +13,7 @@ const Button = ({ variant, text, link, className = '', icon }: ButtonProps) => {
     return (
         <Link
             href={link}
-            className={`flex justify-center items-center gap-2 py-3 px-6 text-custom-white font-semibold rounded ${className}`}
+            className={`flex justify-center items-center gap-2 py-3 px-6 font-semibold rounded ${className}`}
         >
             {
                 icon &&

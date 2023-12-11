@@ -109,7 +109,7 @@ const Checkout = () => {
                         </div>
                     </div>
                 </form>
-                <TotalDetails cart={cart} shipment={shipment} />
+                <TotalDetails variant="checkout" cart={cart} shipment={shipment} />
             </div>
 
         </div>

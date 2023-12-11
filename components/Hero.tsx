@@ -10,8 +10,8 @@ const Hero = () => {
         <h1 className="text-title">El mejor café del mundo, ahora en tu casa</h1>
         <p>Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.</p>
         <div className="w-full flex flex-col items-start gap-4 sm:flex-row">
-          <Button variant="regular" link="" text="Descubrir orígenes" className="bg-custom-black" />
-          <Button variant="regular" link="" text="Comprar café" className="bg-custom-green" />
+          <Button variant="regular" link="" text="Descubrir orígenes" className="text-custom-white bg-custom-black" />
+          <Button variant="regular" link="" text="Comprar café" className="text-custom-white bg-custom-green" />
         </div>
       </div>
       <Image

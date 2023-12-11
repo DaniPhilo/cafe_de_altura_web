@@ -53,7 +53,7 @@ const CartContent = () => {
                     </div>
                 </div>
 
-                <TotalDetails cart={cart} shipment={shipment} />
+                <TotalDetails variant="cart" cart={cart} shipment={shipment} />
             </div>
         </div>
     )
