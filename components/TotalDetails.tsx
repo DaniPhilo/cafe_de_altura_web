@@ -1,3 +1,4 @@
+"use client"
 import CartCoffee from "@/interfaces/CartCoffee"
 import Button from "./Button"
 
@@ -30,7 +31,7 @@ const TotalDetails = ({ cart, shipment }: TotalDetailsProps) => {
                 </div>
             </div>
             <div className="flex justify-center items-center gap-4">
-                <Button link="" text="Ir a checkout" variant="regular" className="bg-custom-green" />
+                <Button link="/checkout" text="Ir a checkout" variant="regular" className="bg-custom-green" />
                 <Button link="/tienda" text="Seguir comprando" variant="regular" className="text-[#2A5B45]" />
             </div>
         </div>

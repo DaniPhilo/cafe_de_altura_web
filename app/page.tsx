@@ -1,4 +1,5 @@
 import Conditions from "@/components/Conditions";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FrecuentQuestions from "@/components/FrecuentQuestions";
 import Hero from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <Products variant="short" />
       <FrecuentQuestions />
       <Location />
+      <ContactSection />
       <Footer variant="regular" />
     </>
   )

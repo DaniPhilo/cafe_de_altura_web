@@ -16,6 +16,8 @@ const config: Config = {
         "off-white": "#F7F5F3",
         "taupe": "#E3DED7",
         "custom-grey": "#515051",
+        "text-grey": "#6B7280",
+        "input-border": "#D1D5DB",
         "custom-dark-grey": "rgba(247, 245, 243, 0.10)"
       },
       fontSize: {
