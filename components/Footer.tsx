@@ -22,7 +22,7 @@ const Footer = ({ variant }: { variant: "short" | "regular" }) => {
                         </div>
                     </div>
                     <div>
-                        <ul>
+                        <ul className="flex flex-col gap-4">
                             <Link href="/tienda">Tienda</Link>
                             <Link href="">Suscripción</Link>
                             <Link href="">Para empresas</Link>
@@ -31,7 +31,7 @@ const Footer = ({ variant }: { variant: "short" | "regular" }) => {
                         </ul>
                     </div>
                     <div>
-                        <ul>
+                        <ul className="flex flex-col gap-4">
                             <Link href="">Política de privacidad</Link>
                             <Link href="">Política de cookies</Link>
                             <Link href="">Términos y condiciones</Link>
